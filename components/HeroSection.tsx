@@ -15,7 +15,7 @@ const HeroSection: React.FC = () => {
                     <br /> O Segredo para Emagrecer Rápido, <span className="text-emerald-600">Sem Passar Fome.</span>
                 </h1>
                 <p className="mt-6 max-w-2xl mx-auto text-lg text-gray-600">
-                    Descubra o 'grão milagroso' que está revolucionando a perda de peso. Mais potente que Ozempic e Mounjaro, porém 100% natural e seguro.
+                    Descubra o 'grão milagroso' que está revolucionando a perda de peso. Mais potente que cápsulas e injeções famosas, porém 100% natural e seguro.
                 </p>
                 <div className="mt-10">
                     <a
