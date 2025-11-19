@@ -17,7 +17,7 @@ const FinalCtaSection: React.FC<CtaSectionProps> = ({ whatsappLink }) => {
                     Restam Apenas 17 Vagas...
                 </p>
 
-                <div className="w-full flex justify-center">
+                <div className="w-full flex flex-col items-center">
                     <a
                         href={whatsappLink}
                         className="animate-pulse-scale inline-flex items-center justify-center px-8 py-4 sm:px-10 sm:py-5 border border-transparent text-lg sm:text-xl font-bold rounded-full text-white bg-emerald-500 hover:bg-emerald-600 shadow-lg w-full sm:w-auto"
@@ -25,6 +25,9 @@ const FinalCtaSection: React.FC<CtaSectionProps> = ({ whatsappLink }) => {
                         <WhatsappIcon className="w-8 h-8 mr-3" />
                         ENTRE NO GRUPO VIP
                     </a>
+                    <p className="mt-4 text-gray-500 font-medium text-lg">
+                        A partir de R$ 197,00
+                    </p>
                 </div>
             </div>
         </section>
