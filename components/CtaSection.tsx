@@ -1,34 +1,34 @@
 import React from 'react';
+import { WhatsappIcon } from './Icons';
 
-const WHATSAPP_LINK = "whatsapp://send?phone=5517981597877&text=Ol%C3%A1,%20quero%20entrar%20no%20grupo!";
+type CtaSectionProps = {
+    whatsappLink: string;
+};
 
-const CtaSection: React.FC = () => {
+const FinalCtaSection: React.FC<CtaSectionProps> = ({ whatsappLink }) => {
     return (
-        <section className="bg-emerald-600 text-white py-20 px-4 sm:px-6 lg:px-8">
+        <section className="bg-white py-16 px-4 sm:px-6 lg:px-8 border-t border-gray-100">
             <div className="max-w-3xl mx-auto text-center">
-                <h2 className="text-3xl sm:text-4xl font-extrabold">
+                <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">
                     Sua Vaga no Grupo VIP Está Expirando!
                 </h2>
-                <p className="mt-4 text-lg text-emerald-100">
-                    Clique no botão abaixo e garanta seu acesso ao grupo exclusivo. Lá você receberá o link de compra com desconto especial e frete grátis.
+                
+                <p className="text-xl sm:text-2xl font-bold text-red-600 animate-pulse mb-8">
+                    Restam Apenas 17 Vagas...
                 </p>
-                <p className="mt-6 text-2xl font-bold text-yellow-300 animate-pulse">
-                    Restam Apenas 17 Vagas Com o Valor Promocional!
-                </p>
-                <div className="mt-10">
-                     <a
-                        href={WHATSAPP_LINK}
-                        className="inline-block px-12 py-5 border border-transparent text-xl font-bold rounded-lg text-emerald-600 bg-white hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg"
+
+                <div className="w-full flex justify-center">
+                    <a
+                        href={whatsappLink}
+                        className="animate-pulse-scale inline-flex items-center justify-center px-8 py-4 sm:px-10 sm:py-5 border border-transparent text-lg sm:text-xl font-bold rounded-full text-white bg-emerald-500 hover:bg-emerald-600 shadow-lg w-full sm:w-auto"
                     >
-                        SIM, QUERO GARANTIR MINHA VAGA!
+                        <WhatsappIcon className="w-8 h-8 mr-3" />
+                        ENTRE NO GRUPO VIP
                     </a>
-                    <p className="mt-4 text-emerald-200">
-                        A partir de R$197 com frete grátis!
-                    </p>
                 </div>
             </div>
         </section>
     );
 };
 
-export default CtaSection;
+export default FinalCtaSection;
