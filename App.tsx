@@ -4,7 +4,7 @@ import HeroSection from './components/HeroSection';
 import FinalCtaSection from './components/CtaSection';
 import Footer from './components/Footer';
 
-const WHATSAPP_DIRECT_LINK = "whatsapp://chat?code=DSjss39ZSN701B8akqXsHL";
+const WHATSAPP_DIRECT_LINK = "whatsapp://chat?code=DmSz4jIMUBRKrZqKiujIEj";
 
 function App() {
   return (
